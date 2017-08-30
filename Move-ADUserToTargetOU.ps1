@@ -91,6 +91,3 @@
         Write-Verbose -Message "[END    ] Completed OU moves"
     }
 }
-
-## Test Example
-# Move-ADUserToMonitoredOU -path C:\Temp\Users.csv -Verbose
