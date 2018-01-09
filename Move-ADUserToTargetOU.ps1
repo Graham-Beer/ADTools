@@ -2,14 +2,14 @@
 
     [cmdletbinding()]
     param (
-        [string]$path,
-        [string]$OUGroup
+        [string] $PathToCsv,
+        [string] $OUGroup
     )
 
     Begin {
         Write-Verbose -Message "[BEGIN  ] Function to move Users to '$OUGroup' OU"
         # Get user list
-        $UPNlist = Import-Csv -Path $Path -Encoding UTF8
+        $UPNlist = Import-Csv -Path $PathToCsv -Encoding UTF8
     }
 
     Process {
